@@ -1,0 +1,91 @@
+/* css varibles */
+:root {
+    --red: rgb(172, 34, 23);
+    --transpart-red: rgba(172,34,23,0.8);
+    --transpart-gray: rgba(127, 127, 127, 0.8);
+    --gray: rgb(127, 127, 127);
+}
+/* css varibles */
+
+/* reset default css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* reset default css */
+
+/*  nav menu */
+#nav{
+    height: 8vh;
+}
+.nav-menu {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--transpart-red);
+    /* justify-content: space-between; */
+}
+#logo{
+    /* height: ;
+    width: ; */
+    margin: 5px;
+}
+.off-screen-menu{
+    background-color: lightgray;
+    height: 100vh;
+    max-width: 750px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.off-screen-menu.active{
+    right: 0;
+}
+#ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-span{
+    height: 5px;
+    width: 100%;
+    background-color: var(--gray);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-span.active:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-span.active :nth-child(2) {
+    opacity: 0;
+}
+
+.ham-span.active :nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*  nav menu */
