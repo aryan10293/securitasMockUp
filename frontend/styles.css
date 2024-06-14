@@ -14,6 +14,9 @@
     margin: 0;
     
 }
+body{
+    height: 300vh;
+}
 a {
     color: black;
     text-decoration: none;
@@ -40,6 +43,8 @@ a:active {
 #nav{
     height: 6vh;
     border-bottom: 1px solid var(--gray);
+    position: sticky;
+    top: 0;
 }
 .nav-menu {
     display: flex;
@@ -47,6 +52,7 @@ a:active {
     background-color: var(--red);
     justify-content: center;
     align-items: center;
+
     /* justify-content: space-between; */
 }
 #logo{
@@ -144,24 +150,77 @@ a:active {
 #main-img{
     height: 40vh;
 }
-.box{
+.box, .section-box{
     margin: .5rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
     padding-right: 3rem;
     padding-left: 3rem;
-    border-bottom: solid 1px var(--red);
 }
 .box h2{
-    color: var(--red);
+    color: var(--gray);
     margin-bottom: 1rem;
 }
 .box p{
-    color: var(--red);
+    color: var(--gray);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.12rem;
 }
 .box a{
-    color: yellow;
+    color: var(--gray);
+}
+.line{
+    height: .5px;
+    background-color: var(--gray);
+    margin: 2rem auto;
 }
 /* main html  display */
+
+/* under the main html tag styiling */
+.section-box{
+    border: solid 1px var(--gray);
+    height: 300px;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    height: 5rem;
+    
+}
+.section-box h3{
+    width: 100%;
+    font-size: 1.7rem;
+    margin: 0 2rem;
+}
+.section-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* .card{
+
+}
+.card h2{
+    font-size: 1.5rem;
+} */
+
+.section-box-card{
+    margin: 2rem;
+
+}
+.section-box-card h2{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 1rem;
+}
+.section-box-card p {
+    color: gray;
+    margin-bottom: 1rem;
+    font-size: 1.12rem;
+}
+/* under the main html tag styiling */
