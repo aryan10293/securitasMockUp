@@ -221,6 +221,6 @@ a:active {
 .section-box-card p {
     color: gray;
     margin-bottom: 1rem;
-    font-size: 1.12rem;
+    /* font-size: 1.12rem;  */
 }
 /* under the main html tag styiling */
