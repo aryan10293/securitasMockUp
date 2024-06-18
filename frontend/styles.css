@@ -153,7 +153,6 @@ a:active {
 .box, .section-box{
     margin: .5rem;
     padding-top: 1rem;
-    padding-bottom: 3rem;
     padding-right: 3rem;
     padding-left: 3rem;
 }
@@ -222,5 +221,28 @@ a:active {
     color: gray;
     margin-bottom: 1rem;
     font-size: 1.12rem; 
+}
+.photos{
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+.card{
+    margin: 2rem;
+}
+.card div{
+    margin-top: 2rem;
+}
+.card div h2{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 1rem;
+}
+.card div p{
+    color: gray;
+    margin-bottom: 1rem;
+    font-size: 1.12rem;
 }
 /* under the main html tag styiling */
