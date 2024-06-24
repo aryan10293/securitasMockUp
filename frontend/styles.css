@@ -14,8 +14,8 @@
     margin: 0;
     
 }
-body{
-    height: 400vh;
+li{
+    list-style: none;
 }
 a {
     color: black;
@@ -270,7 +270,6 @@ a:active {
 .form-info input:focus,  .form-info textarea:focus{
     outline: none;
     box-shadow: 0 0 5px 2px var(--red);
-    /* Red focus effect */
 }
 #contact-form button {
     margin-top: .5rem;
@@ -279,4 +278,38 @@ a:active {
     color: white;
     background-color: var(--gray);
 }
+#footer{
+    background-color: var(--gray);
+    padding: 2rem;
+}
+#footer-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+footer i{
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+    margin-right: .5rem;
+}
+#social-links{
+    margin-bottom: 1rem;
+}
+#footer h2{
+    color: var(--red);
+    font-size: 22px;
+}
+#footer ul{
+    margin-top: 1rem;
+}
+#footer ul li {
+    margin:.5rem 0;
+    color: white;
+}
+#footer ul li a{
+    margin: .5rem 0;
+    color: white;
+}
+
 /* contact form */
